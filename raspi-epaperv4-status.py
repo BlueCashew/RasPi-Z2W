@@ -106,7 +106,7 @@ def show_data():
 		# draw.text((73,90), "\u00b0C", font = tempsymbol, fill = color_2)
 
 		# time
-		draw.text((211,0), ""+str(time_current)+"", font = timefont, fill = color_2)
+		# draw.text((211,0), ""+str(time_current)+"", font = timefont, fill = color_2)
 
 		# processes
 		# draw.text((175,104), "Proc. ", font = pssymbol, fill = color_2)
@@ -125,8 +125,8 @@ def show_data():
 		# draw.text((50,47), ""+str(mem_percent)+" %", font = mem_usagefont, fill = color_2)
 
 		# host
-		draw.text((125,15), "Host.", font = host_symbol, fill = color_2)
-		draw.text((130,32), ""+str(hostname)+"", font = host_font, fill = color_2)
+		# draw.text((125,15), "Host.", font = host_symbol, fill = color_2)
+		# draw.text((130,32), ""+str(hostname)+"", font = host_font, fill = color_2)
 
 		# ip
 		# draw.text((125,50), "Ip.", font = user_symbol, fill = color_2)
