@@ -102,38 +102,38 @@ def show_data():
 		draw.line((205, 22, 210, 15), width = 1, fill = color_2)
 
 		# cpu temp
-		draw.text((5,75), ""+str(round(cpu_temp))+"", font = tempfont, fill = color_2)
-		draw.text((73,90), "\u00b0C", font = tempsymbol, fill = color_2)
+		# draw.text((5,75), ""+str(round(cpu_temp))+"", font = tempfont, fill = color_2)
+		# draw.text((73,90), "\u00b0C", font = tempsymbol, fill = color_2)
 
 		# time
 		draw.text((211,0), ""+str(time_current)+"", font = timefont, fill = color_2)
 
 		# processes
-		draw.text((175,104), "Proc. ", font = pssymbol, fill = color_2)
-		draw.text((215,107), ""+ps, font = psfont, fill = color_2)
+		# draw.text((175,104), "Proc. ", font = pssymbol, fill = color_2)
+		# draw.text((215,107), ""+ps, font = psfont, fill = color_2)
 
 		# mhz usage
-		draw.text((5,4), "Mhz. ", font = mhz_usagesymbol, fill = color_2)
-		draw.text((50,7), ""+str(core)+"", font = mhz_usagefont, fill = color_2)
+		# draw.text((5,4), "Mhz. ", font = mhz_usagesymbol, fill = color_2)
+		# draw.text((50,7), ""+str(core)+"", font = mhz_usagefont, fill = color_2)
 
 		# cpu usage
-		draw.text((5,24), "Cpu. ", font = cpu_usagesymbol, fill = color_2)
-		draw.text((50,27), ""+str(cpu_percent)+" %", font = cpu_usagefont, fill = color_2)
+		# draw.text((5,24), "Cpu. ", font = cpu_usagesymbol, fill = color_2)
+		# draw.text((50,27), ""+str(cpu_percent)+" %", font = cpu_usagefont, fill = color_2)
 
 		# memory usage
-		draw.text((5,44), "Mem. ", font = mem_usagesymbol, fill = color_2)
-		draw.text((50,47), ""+str(mem_percent)+" %", font = mem_usagefont, fill = color_2)
+		# draw.text((5,44), "Mem. ", font = mem_usagesymbol, fill = color_2)
+		# draw.text((50,47), ""+str(mem_percent)+" %", font = mem_usagefont, fill = color_2)
 
 		# host
 		draw.text((125,15), "Host.", font = host_symbol, fill = color_2)
 		draw.text((130,32), ""+str(hostname)+"", font = host_font, fill = color_2)
 
 		# ip
-		draw.text((125,50), "Ip.", font = user_symbol, fill = color_2)
-		draw.text((130,67), ""+str(get_ip_address())+"", font = user_font, fill = color_2)
+		# draw.text((125,50), "Ip.", font = user_symbol, fill = color_2)
+		# draw.text((130,67), ""+str(get_ip_address())+"", font = user_font, fill = color_2)
 
 		# show data on display
-		epd.display(epd.getbuffer(image.rotate(180)))
+		epd.display(epd.getbuffer(image.rotate(90)))
 
 		# refresh display (5 min)
 		time.sleep(300)
